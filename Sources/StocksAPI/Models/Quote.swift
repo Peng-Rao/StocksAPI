@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Quote: Identifiable, Hashable, Codable {
+public struct Quote: Identifiable, Hashable, Decodable {
     public let id = UUID()
     
     public let currency: String?
