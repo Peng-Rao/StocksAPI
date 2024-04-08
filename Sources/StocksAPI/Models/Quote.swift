@@ -8,13 +8,14 @@
 import Foundation
 
 public struct Quote: Identifiable, Hashable, Decodable {
+    
     public let id = UUID()
     
     public let currency: String?
     public let marketState: String?
     public let fullExchangeName: String?
     public let displayName: String?
-    public let symbol: String?
+    public let symbol: String
     public let regularMarketPrice: Double?
     public let regularMarketChange: Double?
     public let regularMarketChangePercent: Double?
